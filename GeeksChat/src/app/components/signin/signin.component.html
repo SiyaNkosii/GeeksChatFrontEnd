@@ -1,0 +1,25 @@
+<div class="whatsapp-container">
+    <header class="header">
+        <div class="logo">
+            <img src="assets/images/geeks.jpg" alt="GeeksChat">
+        </div>
+    </header>
+    <div class="center-container">
+        <div class="auth-form">
+            <h2>Log In</h2>
+            <div *ngIf="registrationSuccess" class="success-message">
+                Successfully logged in!!
+            </div>
+            <div *ngIf="loginError" class="error-message">
+                Invalid credentials. Please try again.
+            </div>
+            <form (ngSubmit)="onSubmit()">
+                <input type="email" id="email" [(ngModel)]="email" name="email" placeholder="Email" required autocomplete="username">
+                <input type="password" id="password" [(ngModel)]="password" name="password" placeholder="Password" required autocomplete="current-password">
+                <button type="submit">Log In</button>
+            </form>
+            <a href="#" routerLink="/forgot-password">Forgot Password?</a>
+            <p>Don't have an account? <a href="#" routerLink="/register" routerLinkActive="active">Sign up</a></p>
+        </div>
+    </div>
+</div>

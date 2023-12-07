@@ -1,0 +1,246 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .whatsapp-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header styles */
+  .header {
+    background-color: #075e54;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  /* Chat area styles */
+  .chat-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+  }
+  
+  /* Adjust styles for chat list, chat window, input field, etc. */
+  /* This part would involve more detailed styling and structure */
+  /* For example, using flexbox/grid for positioning chat list and chat window */
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .whatsapp-container {
+      padding: 10px;
+    }
+    /* Adjust other styles for smaller screens */
+  }
+  
+  /* Header styles */
+  .header {
+    background-color: #075e54;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo styles */
+  .logo img {
+    width: 40px; /* Adjust as needed */
+    height: 40px;
+  }
+  
+  /* Search bar styles */
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input[type="text"] {
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .search-bar button {
+    padding: 5px 10px;
+    background-color: #128C7E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .main-content {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .auth-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .auth-form h2 {
+    margin-bottom: 15px;
+  }
+  
+  .auth-form input[type="text"],
+  .auth-form input[type="password"],
+  .auth-form input[type="email"] {
+    width: 50%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .auth-form button {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #128C7E;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 30px;
+
+  }
+  
+  /* Contact list styles */
+  .contact-list {
+    background-color: #f2f2f2;
+    width: 250px;
+    height: calc(100vh - 20px); /* Adjust the height as needed */
+    padding: 20px;
+    overflow-y: auto /* Enable vertical scrolling */
+  }
+  
+  .contact-list h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  
+  .contact {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact:hover {
+    background-color: #e5e5e5;
+  }
+  
+  .contact img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .contact-info h3 {
+    margin: 0;
+    font-size: 1em;
+  }
+  
+  .contact-info p {
+    margin: 5px 0 0 0;
+    color: #777;
+    font-size: 0.9em;
+  }
+  .conversation {
+    flex-grow: 1; /* Fill remaining space */
+    padding: 20px;
+    border-left: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .conversation-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .conversation-header h2 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .messages {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    flex-grow: 1; /* Allow messages to scroll within the container */
+  }
+  
+  .message {
+    margin-bottom: 15px;
+  }
+  
+  .message-content {
+    max-width: 70%;
+    padding: 8px 12px;
+    border-radius: 10px;
+  }
+  
+  .received .message-content {
+    background-color: #e5e5ea;
+    align-self:flex-start; /* Align received messages to the right */
+  }
+  
+  .sent .message-content {
+    background-color: #DCF8C6;
+    align-self: flex-end; /* Align sent messages to the left */
+  }
+  
+  
+  .message-input {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .message-input input[type="text"] {
+    flex-grow: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    overflow-y: auto; 
+    min-height: 40px; 
+    max-height: 50px; 
+  }
+  
+  .message-input button {
+    padding: 8px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #128C7E;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+
+.center-container {
+    text-align: center;
+    margin-top: 50px; /* Adjust the margin-top as needed */
+}
+
+.center-container p {
+    /* Additional styles for the text within the center-container */
+    font-size: 20px;
+    /* Add any other styles you need */
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
